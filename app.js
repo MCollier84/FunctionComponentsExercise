@@ -39,6 +39,7 @@ ReactDOM.render(
 );
 
 // 4a
+// div>ul>li*3^p ***shortcut to complete the HTML***
 function MassHysteria() {
     return (
         <div>
@@ -107,3 +108,24 @@ ReactDOM.render(
     <GhostBustersAll/>,
     document.getElementById(`root`)
 );
+
+// ******BONUS *******
+// 8a
+function DiceRoll(){
+    // 8b
+    const die1 = Math.floor(Math.random() * 6) + 1;
+    // 8c
+    const die2 = Math.floor(Math.random() * 6) + 1;
+    // 8d
+    return(
+      <div>
+        <h1>{(die1 === 1 && die2 === 1) ? `SNAKE EYES` : `${die1} & ${die2}`}</h1>
+      </div>
+    );
+  }
+  
+  // 8b commented out to see the rest of the Exercise
+//   ReactDOM.render(
+//     <DiceRoll />,
+//     document.getElementById(`root`)
+//   );
